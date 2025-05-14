@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"], // for Google Font
-        custom: ["MyCustomFont", "sans-serif"], // for self-hosted font
+        oswald: ["Oswald", "sans-serif"],
+        Ibrand: ["ibrand"], // for self-hosted font
       },
     },
   },
