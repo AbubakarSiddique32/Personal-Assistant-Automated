@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"], // for Google Font
+        poppins: ["Poppins", "sans-serif"],
         oswald: ["Oswald", "sans-serif"],
-        Ibrand: ["ibrand"], // for self-hosted font
+        Ibrand: ["ibrand"],
       },
     },
   },

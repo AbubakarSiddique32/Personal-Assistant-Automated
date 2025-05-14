@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hamburger lg:hidden block">
+        <div className="hamburger lg:hidden block ">
           <button
             onClick={() => setMenuOpen(true)}
             className=" text-3xl text-[#888888]"
