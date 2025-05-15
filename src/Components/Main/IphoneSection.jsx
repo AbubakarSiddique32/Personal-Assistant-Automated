@@ -1,6 +1,9 @@
 import React from "react";
 import bg from "../../Images/IphoneSection/BG.png";
 import Iphone from "../../Images/IphoneSection/iPhone.png";
+import time from "../../Images/IphoneSection/time.png";
+import plane from "../../Images/IphoneSection/plane.png";
+import global from "../../Images/IphoneSection/global.png";
 
 const IphoneSection = () => {
   return (
@@ -43,6 +46,23 @@ const IphoneSection = () => {
             alt="iPhone"
             className="absolute z-10 xl:w-[60%] lg:w-[65%] md:w-[80%] w-[80%] lg:top-[-25px] md:top-[-20px] top-[-22px] left-0  object-contain drop-shadow-2xl"
           />
+        </div>
+      </div>
+      <div className="iphone-Section-Bottom">
+        <div className="iphone-botom-body">
+          <div className="isbb-item">
+            <img
+              src={time}
+              alt=""
+              className=" w-[60px] h-[60px] object-cover"
+            />
+            <h4 className=" font-poppins font-[400] text-[38px] text-[#101621]">
+              500+
+            </h4>
+            <p className="font-poppins font-[400] text-[24px] text-[#000000]">
+              Users
+            </p>
+          </div>
         </div>
       </div>
     </div>
