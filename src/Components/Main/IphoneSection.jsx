@@ -3,7 +3,7 @@ import bg from "../../Images/IphoneSection/BG.png";
 import Iphone from "../../Images/IphoneSection/iPhone.png";
 import time from "../../Images/IphoneSection/time.png";
 import plane from "../../Images/IphoneSection/plane.png";
-import global from "../../Images/IphoneSection/global.png";
+import world from "../../Images/IphoneSection/global.png";
 
 const IphoneSection = () => {
   return (
@@ -48,19 +48,45 @@ const IphoneSection = () => {
           />
         </div>
       </div>
-      <div className="iphone-Section-Bottom">
-        <div className="iphone-botom-body">
-          <div className="isbb-item">
+      <div className="iphone-Section-Bottom py-[30px] pt-[50px]">
+        <div className="iphone-botom-body lg:w-[80%] w-[90%] flex-wrap flex md:justify-between justify-center md:gap-0 gap-5 m-auto">
+          <div className="isbb-item text-center flex flex-col items-center justify-center md:w-[33.33%] w-[46%]">
             <img
               src={time}
               alt=""
-              className=" w-[60px] h-[60px] object-cover"
+              className=" w-[60px] h-[60px] object-contain"
             />
             <h4 className=" font-poppins font-[400] text-[38px] text-[#101621]">
               500+
             </h4>
             <p className="font-poppins font-[400] text-[24px] text-[#000000]">
               Users
+            </p>
+          </div>
+          <div className="isbb-item text-center flex flex-col items-center justify-center md:w-[33.33%] w-[46%]">
+            <img
+              src={plane}
+              alt=""
+              className=" w-[60px] h-[60px] object-contain"
+            />
+            <h4 className=" font-poppins font-[400] text-[38px] text-[#101621]">
+              1M+
+            </h4>
+            <p className="font-poppins font-[400] text-[24px] text-[#000000]">
+              Notifications Sent
+            </p>
+          </div>
+          <div className="isbb-item text-center flex flex-col items-center justify-center md:w-[33.33%] w-[46%]">
+            <img
+              src={world}
+              alt=""
+              className=" w-[60px] h-[60px] object-contain"
+            />
+            <h4 className=" font-poppins font-[400] text-[38px] text-[#101621]">
+              186
+            </h4>
+            <p className="font-poppins font-[400] text-[24px] text-[#000000]">
+              Countries
             </p>
           </div>
         </div>
