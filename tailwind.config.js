@@ -7,6 +7,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         oswald: ["Oswald", "sans-serif"],
         Ibrand: ["ibrand"],
+        Inter: ["Inter", "sans-serif"],
       },
     },
   },
