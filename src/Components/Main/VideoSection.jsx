@@ -38,10 +38,10 @@ const VideoSection = () => {
           <h1 className=" text-[#323B4B] font-Ibrand md:text-[48px] text-[36px] text-center">
             How to Setup
           </h1>
-          <div className="vsbv-vid w-full py-[40px]">
+          <div className="vsbv-vid w-full py-[40px] ">
             <video
-              src=""
-              className="w-full rounded-[24px]"
+              src="#"
+              className="w-full rounded-[24px] bg-white"
               autoPlay
               loop
               controls

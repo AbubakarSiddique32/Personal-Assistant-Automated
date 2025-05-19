@@ -36,8 +36,10 @@ const PricingPlans = () => {
     },
   ];
 
+  // bg-gradient-to-tr from-purple-50 to-pink-50
+
   return (
-    <div className="py-16  w-full bg-gradient-to-tr from-purple-50 to-pink-50">
+    <div className="py-16  w-full ">
       <div className="text-center mb-12 md:px-0  px-4">
         <h1 className="text-3xl md:text-4xl font-bold">
           Discover The Perfect Plan For You
