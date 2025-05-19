@@ -8,6 +8,7 @@ export default {
         oswald: ["Oswald", "sans-serif"],
         Ibrand: ["ibrand"],
         Inter: ["Inter", "sans-serif"],
+        Sans: ["DM Sans", "sans-serif"],
       },
     },
   },
