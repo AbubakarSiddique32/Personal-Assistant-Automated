@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import Chatbot from "./Chatbot";
 import FAQ from "./FAQ";
 import OverLap from "./Overlap";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
       <Chatbot />
       <FAQ />
       <OverLap />
+      <Footer />
     </div>
   );
 };
