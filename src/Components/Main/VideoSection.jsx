@@ -41,7 +41,7 @@ const VideoSection = () => {
           </h1>
           <div className="vsbv-vid w-full py-[40px] ">
             <video
-              src={videoSec}
+              src=""
               className="w-full rounded-[24px] bg-white"
               autoPlay
               loop
