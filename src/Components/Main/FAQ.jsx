@@ -34,13 +34,13 @@ const FAQ = () => {
 
   return (
     <div className=" w-full">
-      <section className=" md:w-[80%] w-[100%] m-auto md:px-4 px-5 py-10">
+      <section className=" lg:w-[80%] md:w-[90%] w-[100%] m-auto md:px-4 px-5 py-10">
         <div className="mb-10 flex justify-between md:flex-row flex-col md:px-0 px-3">
-          <h2 className="md:text-[48px]  text-[28px] font-[600] font-Ibrand text-[#000000] mb-3">
+          <h2 className="lg:text-[48px] md:text-[33px]  text-[26px] font-[600] font-Ibrand text-[#000000] mb-3">
             Frequently Asked Questions
           </h2>
           <div className="para md:w-[30%]">
-            <p className="text-[#000000] md:text-[14px] text-[12px] font-poppins font-[300]">
+            <p className="text-[#000000] lg:text-[14px]  md:text-[11px] text-[11px] mt-4 font-poppins font-[300]">
               FAQs, short for Frequently Asked Questions, is a section on
               websites or platforms where common questions.
             </p>
@@ -50,7 +50,7 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`transition-all duration-300 mb-4 rounded-[55px] px-3 md:py-5 py-2 ${
+            className={`transition-all duration-300 mb-4 rounded-[55px] px-3 lg:py-5 md:py-2 py-1 ${
               activeIndex === index
                 ? "bg-gradient-to-r from-[#95D4EA] to-[#0090C4] text-white  border  border-[#0090C4]"
                 : "bg-white text-black   border  border-[#777777]"
@@ -58,7 +58,7 @@ const FAQ = () => {
           >
             <button
               onClick={() => toggleIndex(index)}
-              className="w-full flex items-center justify-between gap-3 font-Ibrand  px-6 py-5 text-left md:text-[24px] text-[16px] font-[600] focus:outline-none"
+              className="w-full flex items-center justify-between gap-3 font-Ibrand  px-6 py-5 text-left lg:text-[24px]  md:text-[20px] text-[16px] font-[600] focus:outline-none"
             >
               {faq.question}
               <span className="text-xl flex items-center justify-center text-[20px] bg-black text-white rounded-full p-2">

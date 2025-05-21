@@ -1,5 +1,6 @@
 import React from "react";
 import macbook from "../../Images/VideoSection/Macbook.png";
+import videoSec from "../../Video/assistant.mp4";
 
 const VideoSection = () => {
   return (
@@ -40,7 +41,7 @@ const VideoSection = () => {
           </h1>
           <div className="vsbv-vid w-full py-[40px] ">
             <video
-              src="#"
+              src={videoSec}
               className="w-full rounded-[24px] bg-white"
               autoPlay
               loop

@@ -9,6 +9,7 @@ import Chatbot from "./Chatbot";
 import FAQ from "./FAQ";
 import OverLap from "./Overlap";
 import Footer from "./Footer";
+import LastSection from "./LastSection";
 
 const Main = () => {
   return (
@@ -20,9 +21,10 @@ const Main = () => {
       <PricingPlans />
       <Testimonials />
       <Chatbot />
-      <FAQ />
+      <LastSection />
+      {/* <FAQ />
       <OverLap />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
