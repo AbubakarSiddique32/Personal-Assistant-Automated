@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ForgetPassword() {
   const [email, setEmail] = useState("");
@@ -6,6 +7,12 @@ export default function ForgetPassword() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Password reset link sent to " + email);
+  };
+
+  const navigate = useNavigate();
+
+  const HandleNext = () => {
+    navigate("/password");
   };
 
   return (
@@ -29,6 +36,7 @@ export default function ForgetPassword() {
           />
           <button
             type="submit"
+            onClick={HandleNext}
             className="w-full py-3 bg-gray-400 text-white text-lg rounded-full hover:bg-gray-500 transition-colors"
           >
             Send Reset Password Link

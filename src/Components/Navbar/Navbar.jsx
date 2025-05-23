@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import navImage from "../../Images/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
@@ -8,6 +8,12 @@ const items = ["Home", "Solutions", "How it Works", "Testimonial", "Pricing"];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const HandleNext = () => {
+    navigate("/login");
+  };
 
   return (
     <div className=" w-full">
@@ -39,7 +45,10 @@ const Navbar = () => {
         </div>
         <div className="right lg:block hidden">
           <div className="buttons flex gap-4">
-            <button className="py-[12px] px-[12px]  text-[#000000]  font-poppins font-[400] text-[15px] cursor-pointer hover:scale-105  ">
+            <button
+              onClick={HandleNext}
+              className="py-[12px] px-[12px]  text-[#000000]  font-poppins font-[400] text-[15px] cursor-pointer hover:scale-105  "
+            >
               Sign In
             </button>
             <button className=" py-[12px] px-[20px] rounded-[37.5px] bg-[#000000] text-[#FFFFFF] font-poppins font-[400] text-[15px] cursor-pointer hover:scale-105  ">

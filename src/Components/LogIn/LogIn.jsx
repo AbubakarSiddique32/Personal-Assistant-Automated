@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LogIn() {
   const [email, setEmail] = useState("");
@@ -93,11 +94,11 @@ export default function LogIn() {
           </div>
 
           <p className="text-gray-600 text-base">
-            By continuing, you agree to the{" "}
+            By continuing, you agree to the
             <a href="#" className="text-blue-600 underline">
               Terms of use
-            </a>{" "}
-            and{" "}
+            </a>
+            and
             <a href="#" className="text-blue-600 underline">
               Privacy Policy
             </a>
@@ -131,15 +132,15 @@ export default function LogIn() {
 
         <div className="mt-6 text-sm">
           <p className="mb-2 text-gray-800">
-            <a href="forget.html" className="text-blue-600 underline">
+            <Link to="/forget" className="text-blue-600 underline">
               Forget your password
-            </a>
+            </Link>
           </p>
           <p className="text-gray-800">
-            Don’t have an account?{" "}
-            <a href="account.html" className="text-blue-600 underline">
+            Don’t have an account?
+            <Link to="/signup" className="text-blue-600 underline">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
