@@ -15,9 +15,9 @@ const NewPassword = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-gray-100 to-pink-50 flex items-center justify-center px-4">
-      <div className="w-full max-w-md bg-white p-6 rounded-xl shadow-lg">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-gray-100 to-pink-100 flex items-center justify-center px-4">
+      <div className="w-full max-w-xl  p-6 ">
+        <h1 className="text-[32px] font-semibold text-[#333333] mb-6  font-poppins">
           Enter Your New Password
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
 
 export default function LogIn() {
   const [email, setEmail] = useState("");
@@ -118,14 +120,14 @@ export default function LogIn() {
             href="https://www.google.com/intl/en-GB/account/about/"
             className="flex items-center gap-3 px-4 py-3 border rounded-lg bg-white shadow-sm w-full justify-center"
           >
-            <img src="images/google.png" alt="Google" className="w-6 h-6" />{" "}
+            <FcGoogle className=" h-6 w-6" />
             Continue with Google
           </a>
           <a
             href="https://support.apple.com/en-mide/111001"
             className="flex items-center gap-3 px-4 py-3 border rounded-lg bg-black text-white w-full justify-center"
           >
-            <img src="images/apple.png" alt="Apple" className="w-6 h-6" />{" "}
+            <FaApple className="h-6 w-6" />
             Continue with Apple
           </a>
         </div>

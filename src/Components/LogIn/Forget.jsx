@@ -16,7 +16,7 @@ export default function ForgetPassword() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-gray-100 to-pink-100 py-32 px-5">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-gray-100 to-pink-100 flex items-center justify-center px-4">
       <div className="max-w-xl mx-auto text-center">
         <h1 className="text-3xl font-medium text-left text-gray-800 mb-4 font-poppins">
           Forget Your Password?
