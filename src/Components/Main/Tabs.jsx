@@ -1,84 +1,86 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const slides = [
   {
-    id: 0,
-    title: "How to use.",
-    desc: "Detailed walkthrough of each feature, including calendar integration, task synchronization, and automated summaries.",
-    sideLabel: "Centralized Information Management.",
-    button: "Learn More",
+    number: "01",
+    title: "Centralized Information Management.",
+    heading: "How to use",
+    description:
+      "Centralized information management, including calendar integration and task synchronization.",
   },
   {
-    id: 1,
-    title: "Automated Summaries.",
-    desc: "Receive daily summaries with key tasks and appointments in one place.",
-    sideLabel: "Automated Daily Summaries.",
-    button: "Explore",
+    number: "02",
+    title: "Automated Daily Summaries.",
+    heading: "Automated Summaries",
+    description:
+      "Centralized information management, including calendar integration and task synchronization.",
   },
   {
-    id: 2,
+    number: "03",
     title: "Real-Time Updates.",
-    desc: "Sync changes instantly across all your tools and platforms.",
-    sideLabel: "Real-Time Updates.",
-    button: "Discover",
+    heading: "Real-Time Updates",
+    description:
+      "Centralized information management, including calendar integration and task synchronization.",
   },
   {
-    id: 3,
-    title: "Custom Scheduling.",
-    desc: "Organize your time with customizable scheduling tools and reminders.",
-    sideLabel: "Customizable Scheduling.",
-    button: "Start Now",
-  },
-  {
-    id: 4,
-    title: "Reporting Tools.",
-    desc: "Generate PDF and CSV summaries from your data automatically.",
-    sideLabel: "Smart Reporting & Exporting.",
-    button: "Try Now",
+    number: "04",
+    title: "Customizable Scheduling.",
+    heading: "Customizable Scheduling.",
+    description:
+      "Centralized information management, including calendar integration and task synchronization.",
   },
 ];
 
-export default function Tabs() {
-  const [activeIndex, setActiveIndex] = useState(0);
+const Tabs = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div className="flex w-full max-w-6xl mx-auto mt-10 rounded-2xl overflow-hidden border border-gray-200">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          onClick={() => setActiveIndex(index)}
-          className={`transition-all duration-500 ease-in-out cursor-pointer ${
-            activeIndex === index ? "w-[70%] p-6 bg-white" : "w-[6%] bg-gray-50"
-          }`}
-        >
-          {activeIndex === index ? (
-            <div className="h-full flex flex-col justify-between">
-              <div>
-                <h2 className="text-xl font-semibold mb-2">{slide.title}</h2>
-                <p className="text-sm text-gray-600 mb-4 max-w-md">
-                  {slide.desc}
-                </p>
-                <button className="bg-orange-600 text-white px-4 py-1.5 text-sm rounded hover:bg-orange-700">
-                  {slide.button}
-                </button>
-              </div>
-              <div className="mt-6">
-                <div className="w-full h-40 bg-gray-200 rounded flex items-center justify-center">
-                  <img
-                    src="/placeholder.png"
-                    alt="Visual"
-                    className="h-20 w-20"
-                  />
+    <div className="w-full py-20 bg-white">
+      <div className="flex max-w-[1500px] h-[60vh] mx-auto border border-gray-400 rounded-[50px] overflow-hidden">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            onClick={() => setActiveSlide(index)}
+            className={`transition-all duration-500 ease-in-out cursor-pointer relative border-r border-gray-300 last:border-r-0 ${
+              activeSlide === index ? "flex-[5]" : "flex-[0.5]"
+            } flex items-center justify-center`}
+          >
+            {/* Slide Left */}
+            <div className="flex flex-col items-center justify-center h-[50vh] w-[20%] text-center">
+              <h3 className="text-lg font-semibold mb-4">{slide.number}</h3>
+              <h4 className="writing-mode-vertical-rl transform rotate-180 text-md font-medium tracking-wide text-gray-700 h-[44vh] px-2">
+                {slide.title}
+              </h4>
+            </div>
+
+            {/* Slide Right (visible only if active) */}
+            {activeSlide === index && (
+              <div className="w-[80%] flex flex-col justify-center items-center px-4">
+                <h2 className="text-2xl font-semibold mb-4">{slide.heading}</h2>
+                <div className="flex justify-between w-full">
+                  <p className="w-[55%] text-gray-600 text-[16px] leading-6 font-[400] font-poppins px-2">
+                    {slide.description}
+                  </p>
+                  <div className="w-[23%] flex flex-col items-center justify-center pr-6">
+                    <a
+                      href="#"
+                      className="bg-[#b64b0b] text-white py-2 px-4 rounded-full text-[16px]"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
+                <div className="absolute right-40 top-20 opacity-30 z-[-1]">
+                  <img src="/images/Vector.png" alt="Gradient" />
+                </div>
+                <div className="w-[92%] h-[282px] bg-gray-200 mt-4 rounded-[30px]" />
               </div>
-            </div>
-          ) : (
-            <div className="flex items-center justify-center h-full transform -rotate-90 text-[10px] font-medium whitespace-nowrap">
-              {slide.sideLabel}
-            </div>
-          )}
-        </div>
-      ))}
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
+
+export default Tabs;

@@ -13,7 +13,7 @@ const Main = () => {
     <div>
       <HeroSection />
       <IphoneSection />
-      {/* <Tabs /> */}
+      <Tabs />
       <VideoSection />
       <PricingPlans />
       <Testimonials />
