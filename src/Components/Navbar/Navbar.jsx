@@ -15,6 +15,10 @@ const Navbar = () => {
     navigate("/login");
   };
 
+  const HandleStarted = () => {
+    navigate("/getstarted");
+  };
+
   return (
     <div className=" w-full">
       <nav className=" flex w-[90%] m-auto py-[20px] justify-between items-center">
@@ -51,7 +55,10 @@ const Navbar = () => {
             >
               Sign In
             </button>
-            <button className=" py-[12px] px-[20px] rounded-[37.5px] bg-[#000000] text-[#FFFFFF] font-poppins font-[400] text-[15px] cursor-pointer hover:scale-105  ">
+            <button
+              onClick={HandleStarted}
+              className=" py-[12px] px-[20px] rounded-[37.5px] bg-[#000000] text-[#FFFFFF] font-poppins font-[400] text-[15px] cursor-pointer hover:scale-105  "
+            >
               Get Started
             </button>
           </div>
