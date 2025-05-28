@@ -50,13 +50,14 @@ const MainSection = () => {
     <div className="bg-gradient-to-br from-white via-[#f3f3f3] to-white px-4 py-10">
       <div className="max-w-screen-xl mx-auto">
         {/* Top Headline */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          Headline of Website Will Goes Here{" "}
-          <span className="text-blue-600">in</span>
-        </h1>
+        <div className="heading bg-white py-10 px-5 rounded-full flex items-center justify-center w-[90%] m-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-center ">
+            Headline of Website Will Goes Here in
+          </h1>
+        </div>
 
         {/* What Can I Do For You */}
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-10">
+        <div className="flex flex-col lg:flex-row justify-between items-center mb-10 pt-10 w-[80%] m-auto">
           <h2 className="text-3xl font-semibold mb-4 lg:mb-0">
             What Can I Do For You?
           </h2>
@@ -69,7 +70,7 @@ const MainSection = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-20 w-[80%] m-auto">
           {services.map((item, i) => (
             <a
               href={item.href}

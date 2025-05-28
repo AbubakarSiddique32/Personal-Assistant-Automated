@@ -35,8 +35,8 @@ const Tabs = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div className="w-full py-20 bg-white">
-      <div className="flex max-w-[1500px] h-[60vh] mx-auto border border-gray-400 rounded-[50px] overflow-hidden">
+    <div className="w-full py-20 bg-white px-5">
+      <div className="flex max-w-[1500px] h-[60vh] mx-auto border border-gray-400 rounded-[50px] overflow-hidden ">
         {slides.map((slide, index) => (
           <div
             key={index}
