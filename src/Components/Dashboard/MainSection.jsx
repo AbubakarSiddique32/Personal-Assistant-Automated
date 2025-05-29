@@ -1,69 +1,71 @@
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import imageIcon from "../../Images/Get Started/health.jpeg";
 
 const services = [
   {
     title: "Daily Notifications",
-    desc: "Stay updated with your daily tasks and important alerts.",
+    desc: "Stay on top of your day with customized daily notifications. Get timely reminders for tasks, meetings, and important updates, ensuring you never miss a beat. With personalized alerts tailored to your needs, managing your schedule has never been easier. Keep everything organized and enjoy the peace of mind that comes with staying informed every step of the way.",
     href: "notification.html",
-    img: "images/noti.jpg",
+    img: imageIcon,
     bg: "bg-blue-100",
   },
   {
     title: "Weather Update",
-    desc: "Get real-time weather forecasts tailored to your location.",
+    desc: "Prepare for your day with precise and reliable weather updates. Whether it’s sunshine, rain, or snow, stay informed with real-time forecasts that help you plan your activities accordingly. From your morning commute to weekend plans, these updates ensure you’re always ready for whatever the day brings. Make weather surprises a thing of the past with accurate insights.",
     href: "weather.html",
-    img: "images/weather.jpeg",
+    img: imageIcon,
     bg: "bg-pink-100",
   },
   {
     title: "Motivational",
-    desc: "Receive inspiring messages to keep you going every day.",
+    desc: "Brighten your day with daily motivational messages crafted to inspire and uplift. These thoughtful quotes and affirmations provide the encouragement you need to tackle challenges, stay focused, and achieve your goals. Whether you’re starting a new project or simply need a boost, these positive words will keep you motivated and ready to conquer whatever comes your way.",
     href: "motivation.html",
-    img: "images/moti.jpeg",
+    img: imageIcon,
     bg: "bg-red-100",
   },
   {
     title: "Events Updates",
-    desc: "Never miss important events and meetings again.",
+    desc: "Stay informed and prepared with instant updates on events, appointments, and meetings. From work commitments to personal gatherings, never miss an important occasion again. Your virtual assistant keeps track of your schedule, ensuring you’re always organized and ready. With effortless event management, you can focus on enjoying the moment without worrying about missing anything important.",
     href: "event.html",
-    img: "images/event.jpg",
+    img: imageIcon,
     bg: "bg-green-100",
   },
   {
     title: "Health Care Reminder",
-    desc: "Timely health checkup and medicine intake alerts.",
+    desc: "Take charge of your health with timely reminders for medications, doctor appointments, and fitness routines. This personalized health assistant ensures you never forget important wellness tasks. Stay consistent with your self-care habits, improve your health, and maintain a balanced lifestyle. Simplify health management with automated reminders that make prioritizing your well-being effortless and stress-free.",
     href: "second-motivation.html",
-    img: "images/health.jpeg",
+    img: imageIcon,
     bg: "bg-yellow-100",
   },
   {
     title: "Personal Assistant",
-    desc: "Your smart AI assistant to handle everyday tasks.",
+    desc: "Experience the convenience of a virtual personal assistant that handles your day-to-day tasks with precision. From managing schedules to organizing to-dos, this smart tool adapts to your needs seamlessly. It saves time, boosts productivity, and makes juggling responsibilities easier than ever. Whether it’s work or personal life, your assistant ensures you stay organized and focused on what matters most.",
     href: "assistant.html",
-    img: "images/personal.jpeg",
+    img: imageIcon,
     bg: "bg-purple-100",
   },
 ];
 
 const MainSection = () => {
   return (
-    <div className="bg-gradient-to-br from-white via-[#f3f3f3] to-white px-4 py-10">
+    <div className=" bg-gradient-to-br from-[#f6fbe4] via-[#e9d9f3] to-[#e5cafc]] px-4 py-10">
       <div className="max-w-screen-xl mx-auto">
         {/* Top Headline */}
         <div className="heading bg-white py-10 px-5 rounded-full flex items-center justify-center w-[90%] m-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-center ">
+          <h1 className="md:text-[32px] lg:text-[48px] text-[28px] font-[400] font-Ibrand text-center ">
             Headline of Website Will Goes Here in
           </h1>
         </div>
 
         {/* What Can I Do For You */}
         <div className="flex flex-col lg:flex-row justify-between items-center mb-10 pt-10 w-[80%] m-auto">
-          <h2 className="text-3xl font-semibold mb-4 lg:mb-0">
+          <h2 className="md:text-3xl text-2xl font-semibold font-Inter mb-4 lg:mb-0">
             What Can I Do For You?
           </h2>
           <a
             href="#"
-            className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition"
+            className="bg-black text-white px-6 py-2 rounded-[32px] font-poppins text-[13px] hover:bg-gray-800 transition"
           >
             See all services
           </a>
@@ -83,7 +85,7 @@ const MainSection = () => {
                   alt={item.title}
                   className="w-14 h-14 rounded object-cover"
                 />
-                <img src="images/long arrow.png" alt="arrow" className="w-6" />
+                <FaArrowRightLong className=" w-6" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-700 text-sm">{item.desc}</p>
