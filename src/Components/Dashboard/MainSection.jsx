@@ -1,6 +1,17 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import imageIcon from "../../Images/Get Started/health.jpeg";
+import group1 from "../../Images/Get Started/Group 1.png";
+import group2 from "../../Images/Get Started/Group 2.png";
+import group3 from "../../Images/Get Started/Group 3.png";
+import group4 from "../../Images/Get Started/Group 4.png";
+
+const groupImages = [
+  { id: 1, src: group1, alt: "Group 1" },
+  { id: 2, src: group2, alt: "Group 2" },
+  { id: 3, src: group3, alt: "Group 3" },
+  { id: 4, src: group4, alt: "Group 4" },
+];
 
 const services = [
   {
@@ -77,7 +88,7 @@ const MainSection = () => {
             <a
               href={item.href}
               key={i}
-              className={`${item.bg} p-6 rounded-lg shadow-md transition hover:shadow-xl`}
+              className={`${item.bg} p-6 rounded-lg shadow-md transition hover:shadow-xl hover:scale-105`}
             >
               <div className="flex justify-between items-center mb-4">
                 <img
@@ -87,25 +98,29 @@ const MainSection = () => {
                 />
                 <FaArrowRightLong className=" w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-700 text-sm">{item.desc}</p>
+              <h3 className="text-xl font-semibold text-[#000000] font-Ibrand mb-2">
+                {item.title}
+              </h3>
+              <p className="text-[#5A5A5A] font-poppins text-[11px]">
+                {item.desc}
+              </p>
             </a>
           ))}
         </div>
 
         {/* Bottom CTA */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#323B4B] font-Ibrand">
             Simplify Your Day with Smarter <br /> Solutions
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto mb-6">
+          <p className="text-[#5D6A83] font-Inter font-[400] text-[18px] max-w-2xl mx-auto mb-6">
             Discover the power of automation and efficiency with our innovative
             virtual assistant. Designed to streamline your tasks, organize your
             schedule, and maximize productivity.
           </p>
           <a
             href="#"
-            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+            className="bg-[#416675] font-Inter font-[600] text-[16px] text-white px-6 py-2 rounded-[8px] hover:bg-[#1d353f] transition"
           >
             Button
           </a>
@@ -113,11 +128,11 @@ const MainSection = () => {
 
         {/* Illustration Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {["img1.png", "img2.png", "img3.png", "img4.png"].map((img, i) => (
+          {groupImages.map((group) => (
             <img
-              key={i}
-              src={`images/${img}`}
-              alt={`Illustration ${i + 1}`}
+              key={group.id}
+              src={group.src}
+              alt={group.alt}
               className="w-full h-40 object-contain"
             />
           ))}
