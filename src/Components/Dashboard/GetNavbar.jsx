@@ -37,7 +37,7 @@ const GetNavbar = () => {
               return (
                 <li key={index}>
                   <Link
-                    to=""
+                    to="/"
                     className=" text-[#888888] font-poppins font-[400] text-[15px] cursor-pointer hover:text-[#000000] hover:scale-105"
                   >
                     {item}

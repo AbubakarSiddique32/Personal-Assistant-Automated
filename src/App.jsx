@@ -11,15 +11,16 @@ import GetStarted from "./Components/Dashboard/GetStarted";
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const authRoutes = ["/login", "/signup", "/forget", "/password"];
-  const noNavbarRoutes = ["/getstarted", ...authRoutes]; // Add '/getstarted' here
+  const pathname = location.pathname;
 
-  const hideNavbar = noNavbarRoutes.includes(location.pathname);
+  const authRoutes = ["/login", "/signup", "/forget", "/password"];
+  const isAuthRoute = authRoutes.includes(pathname);
+  const isGetStartedRoute = pathname.startsWith("/getstarted");
 
   return (
     <>
-      {!hideNavbar && <Navbar />}
-      {authRoutes.includes(location.pathname) && <AuthNavbar />}
+      {!isAuthRoute && !isGetStartedRoute && <Navbar />}
+      {isAuthRoute && <AuthNavbar />}
       {children}
     </>
   );

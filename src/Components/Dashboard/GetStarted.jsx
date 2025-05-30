@@ -9,6 +9,7 @@ import MotivationPage from "./Pages/Motivational";
 import Events from "./Pages/Events";
 import HealthCare from "./Pages/HealthCare";
 import Assistent from "./Pages/Assistent";
+import Footer from "../Main/Footer";
 const GetStarted = () => {
   return (
     <div>
@@ -23,12 +24,60 @@ const GetStarted = () => {
             </>
           }
         />
-        <Route path="notification" element={<DailyNotification />} />
-        <Route path="weather" element={<WeatherUpdate />} />
-        <Route path="motivation" element={<MotivationPage />} />
-        <Route path="event" element={<Events />} />
-        <Route path="health" element={<HealthCare />} />
-        <Route path="assistent" element={<Assistent />} />
+        <Route
+          path="notification"
+          element={
+            <>
+              <DailyNotification />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="weather"
+          element={
+            <>
+              <WeatherUpdate />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="motivation"
+          element={
+            <>
+              <MotivationPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="event"
+          element={
+            <>
+              <Events />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="health"
+          element={
+            <>
+              <HealthCare />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="assistent"
+          element={
+            <>
+              <Assistent />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
