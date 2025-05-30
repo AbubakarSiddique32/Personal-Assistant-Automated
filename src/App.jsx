@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/forget" element={<ForgetPassword />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/password" element={<NewPassword />} />
-          <Route path="/getstarted" element={<GetStarted />} />
+          <Route path="/getstarted/*" element={<GetStarted />} />
         </Routes>
       </Layout>
     </BrowserRouter>
