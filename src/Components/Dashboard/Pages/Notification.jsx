@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaFacebookF,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import pageImage from "../../../Images/Get Started/Pages/Image.png";
 import { Link } from "react-router-dom";
+import noti from "../../../Images/Get Started/Pages/Notification.png";
 
 const DailyNotification = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,26 +10,36 @@ const DailyNotification = () => {
     <div className="font-[Poppins]">
       {/* Main Section */}
       <main className="bg-gradient-to-br from-[#fef9eb] via-[#f2f5f0] to-[#f8f3fd] py-20 px-5">
-        <div className="max-w-5xl mx-auto bg-white p-8 rounded-[50px]">
-          <h1 className="text-2xl font-bold mb-6">Daily Notifications</h1>
+        <div className="xl:w-[70%] md:w-[85%] w-[90%] m-auto bg-white md:p-10 p-5 py-7 rounded-[50px]">
+          <h1 className="text-[28px] font-poppins font-bold mb-6">
+            Daily Notifications
+          </h1>
 
           <div className="flex items-center gap-6 mb-6">
             <img
-              src="/images/cl.png"
+              src={pageImage}
               alt="Client"
               className="w-[84px] h-[84px] object-contain rounded-full border border-red-900"
             />
-            <p className="text-2xl font-semibold text-[#1b2228]">Scott Wisse</p>
+            <p className="text-[28px] font-poppins font-semibold text-[#1B2228]]">
+              Scott Wisse
+            </p>
           </div>
 
           <div className="mb-8">
-            <p className="text-xl font-bold text-[#1b2228]">Settings</p>
+            <p className="text-xl font-poppins font-bold text-[#1b2228]">
+              Settings
+            </p>
           </div>
 
-          <div className="flex justify-between items-center bg-[#efefef] px-4 py-3 rounded mb-10">
+          <div className="flex justify-between items-center bg-[#EFEFEF] px-4 py-3 gap-2  mb-10">
             <div>
-              <h4 className="font-semibold">Enable Daily Notifications</h4>
-              <p className="text-sm">Turn on to receive notifications daily</p>
+              <h4 className="font-semibold text-[#1B2228] font-poppins text-[17px]">
+                Enable Daily Notifications
+              </h4>
+              <p className=" text-[#14242E9E] font-[400] text-[15px]">
+                Turn on to receive notifications daily
+              </p>
             </div>
             <label className="inline-flex items-center cursor-pointer">
               <input type="checkbox" className="sr-only peer" />
@@ -45,27 +49,22 @@ const DailyNotification = () => {
 
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-1/2 text-center lg:text-left">
-              <div className="flex justify-center lg:justify-start items-center gap-2 mb-2">
-                <p className="font-bold text-[#416675]">LITTLE TEXT HERE</p>
-                <img src="/images/Vector 1.png" alt="Arrow" />
-              </div>
-              <h2 className="text-[30px] md:text-[40px] font-semibold text-[#323b4b] mb-4">
+              <h2 className="text-[30px] md:text-[40px] font-Ibrand font-semibold text-[#000000] mb-4">
                 Stay Informed with Daily Notifications
               </h2>
-              <p className="text-[#5d6a83] mb-6">
+              <p className="text-[#5D6A83] font-Inter font-[400] text-[18px] mb-6">
                 Lorem ipsum dolor sit amet consectetur. Elementum risus tempor
                 at vivamus curabitur viverra diam nec.
               </p>
-              <Link
-                to="/calendar"
-                className="inline-block text-sm text-[#0090c4] bg-[#f3f3f3] py-3 px-4 rounded-lg shadow-inner"
-              >
-                Connect With Google Calendar
-              </Link>
+              <div className="button mt-[20px]">
+                <button className="px-6 py-2 rounded-full text-[#0090C4] text-sm font-semibold bg-[rgba(255, 255, 255, 0.5)] shadow-[inset_2px_2px_4px_rgba(0,0,0,0.2),inset_-2px_-2px_4px_rgba(0,0,0,0.05),0_4px_10px_rgba(0,0,0,0.3)] hover:brightness-70 transition cursor-pointer">
+                  Get Started
+                </button>
+              </div>
             </div>
             <div className="lg:w-1/2">
               <img
-                src="/images/daily-noti.png"
+                src={noti}
                 alt="Notification"
                 className="max-w-full h-auto object-contain"
               />
