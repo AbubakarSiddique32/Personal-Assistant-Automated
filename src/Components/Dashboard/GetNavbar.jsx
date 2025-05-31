@@ -104,7 +104,7 @@ const GetNavbar = () => {
           ))}
           <li>
             <button className=" w-full text-center py-[12px] px-[12px]  text-[#000000] border rounded-[37.5px]  font-poppins font-[400] text-[15px] cursor-pointer hover:scale-105 ">
-              Sign In
+              Sign Out
             </button>
           </li>
           <li>

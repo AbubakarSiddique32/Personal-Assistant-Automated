@@ -65,15 +65,15 @@ const MainSection = () => {
     <div className=" bg-gradient-to-br from-[#f6fbe4] via-[#e9d9f3] to-[#e5cafc] px-4 py-10">
       <div className="max-w-screen-xl mx-auto">
         {/* Top Headline */}
-        <div className="heading bg-white py-10 px-5 rounded-full flex items-center justify-center w-[90%] m-auto">
-          <h1 className="md:text-[32px] lg:text-[48px] text-[28px] font-[400] font-Ibrand text-center ">
+        <div className="heading bg-white md:py-10 py-5 px-5 rounded-full flex items-center justify-center w-[90%] m-auto">
+          <h1 className="md:text-[32px] lg:text-[48px] text-[20px] font-[400] font-Ibrand text-center ">
             Headline of Website Will Goes Here in
           </h1>
         </div>
 
         {/* What Can I Do For You */}
         <div className="flex flex-col lg:flex-row justify-between items-center mb-10 pt-10 w-[80%] m-auto">
-          <h2 className="md:text-3xl text-2xl font-semibold font-Inter mb-4 lg:mb-0">
+          <h2 className="md:text-3xl text-[20px] font-semibold font-Inter mb-4 lg:mb-0">
             What Can I Do For You?
           </h2>
           <Link
@@ -85,7 +85,7 @@ const MainSection = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-20 w-[80%] m-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-20 md:w-[80%] w-full m-auto">
           {services.map((item, i) => (
             <Link
               to={item.href}

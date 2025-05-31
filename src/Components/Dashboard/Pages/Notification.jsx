@@ -10,12 +10,12 @@ const DailyNotification = () => {
     <div className="font-[Poppins]">
       {/* Main Section */}
       <main className="bg-gradient-to-br from-[#fef9eb] via-[#f2f5f0] to-[#f8f3fd] py-20 px-5">
-        <div className="xl:w-[70%] md:w-[85%] w-[90%] m-auto bg-white md:p-10 p-5 py-7 rounded-[50px]">
-          <h1 className="text-[28px] font-poppins font-bold mb-6">
+        <div className="xl:w-[70%] md:w-[85%] w-full m-auto bg-white md:px-8 px-3 py-7  rounded-[50px]">
+          <h1 className="text-[28px] font-poppins font-bold mb-5">
             Daily Notifications
           </h1>
 
-          <div className="flex items-center gap-6 mb-6">
+          <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
             <img
               src={pageImage}
               alt="Client"
@@ -32,7 +32,7 @@ const DailyNotification = () => {
             </p>
           </div>
 
-          <div className="flex justify-between items-center bg-[#EFEFEF] px-4 py-3 gap-2  mb-10">
+          <div className="flex md:flex-row flex-col justify-between  bg-[#EFEFEF] px-4 py-3 gap-2  mb-10">
             <div>
               <h4 className="font-semibold text-[#1B2228] font-poppins text-[17px]">
                 Enable Daily Notifications
@@ -43,7 +43,7 @@ const DailyNotification = () => {
             </div>
             <label className="inline-flex items-center cursor-pointer">
               <input type="checkbox" className="sr-only peer" />
-              <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-500 relative after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full" />
+              <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-500 relative after:content-[''] after:absolute after:top-0.5 after:left-0.5  after:bg-black after:border-black after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full" />
             </label>
           </div>
 

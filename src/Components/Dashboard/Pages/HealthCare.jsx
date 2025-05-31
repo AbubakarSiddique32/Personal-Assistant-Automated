@@ -2,147 +2,149 @@ import React from "react";
 
 const HealthCare = () => {
   return (
-    <div className="bg-[#f6ebfe] min-h-screen py-16 px-4">
-      {/* <header className="bg-white/30 w-full shadow-sm">
-        <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-          <div className="flex items-center gap-4">
-            <img src="images/get-logo.png" alt="Logo" className="h-10" />
-            <nav className="hidden md:flex gap-6 text-gray-600 text-sm">
-              <a href="#" className="hover:underline text-black">
-                Home
-              </a>
-              <a href="#">How it Works</a>
-              <a href="#">Testimonial</a>
-              <a href="#">Pricing</a>
-              <a href="#">Settings</a>
-            </nav>
-          </div>
-          <div className="flex gap-4">
-            <a href="log.html" className="text-sm text-black">
-              Sign In
-            </a>
-            <a
-              href="account.html"
-              className="bg-black text-white px-4 py-2 rounded text-sm"
-            >
-              Get Started
-            </a>
-          </div>
+    <main className="bg-gradient-to-br from-[#fef9eb] via-[#f2f5f0] to-[#f8f3fd] py-20 px-5">
+      <div className="xl:w-[70%] md:w-[85%] w-full m-auto bg-white md:px-8 px-3 py-7  rounded-[50px]">
+        <div className="mb-4">
+          <h1 className="text-[28px] font-bold text-[#1b2228] font-poppins">
+            Health Care Reminder
+          </h1>
         </div>
-      </header>
-
-      <main className="max-w-6xl mx-auto bg-white rounded-[3rem] p-8">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6 text-[#1b2228]">
-          Events Notifications
-        </h1>
-
-        <div className="flex items-center mb-4">
-          <div className="w-12 h-12 overflow-hidden rounded-full border border-red-600">
+        <div className="flex items-center w-full my-6" id="direction">
+          <div className="w-[84px]">
             <img
               src="images/cl.png"
-              alt="Scott Wisse"
-              className="object-cover w-full h-full"
+              alt=""
+              className="rounded-full border border-red-800 object-cover"
             />
           </div>
-          <p className="ml-4 text-lg font-semibold text-[#1b2228]">
+          <p className="ml-4 text-[28px] font-semibold text-[#1b2228] font-poppins">
             Scott Wisse
           </p>
         </div>
-
         <div className="mb-4">
-          <p className="text-xl font-bold text-[#1b2228]">Settings</p>
+          <p className="text-[20px] font-bold text-[#1b2228] font-poppins">
+            Settings
+          </p>
         </div>
-
-        <div className="flex justify-between items-center bg-gray-200 px-4 py-3 rounded mb-6">
+        <div className="flex justify-between items-center border-b border-blue-200 pb-6 mb-6">
           <div>
-            <h4 className="text-base font-bold text-black">
-              Enable Event Notifications
+            <h4 className="text-[17px] font-bold font-poppins text-[#1b2228]">
+              Enable Weather Update
             </h4>
-            <p className="text-sm text-gray-600">
+            <p className="text-[15px] text-[#666] font-poppins mt-1">
               Turn on to receive notifications daily
             </p>
           </div>
-          <label className="relative inline-block w-11 h-6">
-            <input type="checkbox" className="opacity-0 w-0 h-0 peer" />
-            <span className="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-400 rounded-full transition peer-checked:bg-blue-500 peer-checked:before:translate-x-full before:absolute before:content-[''] before:h-4 before:w-4 before:left-1 before:bottom-1 before:bg-black before:rounded-full before:transition"></span>
+          <label className="relative inline-block w-[46px] h-[24px]">
+            <input type="checkbox" className="hidden" />
+            <span className="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-[#ccc] rounded-full transition-all before:absolute before:content-[''] before:h-[15px] before:w-[15px] before:left-[3px] before:bottom-[5px] before:bg-black before:rounded-full before:transition-all peer-checked:bg-blue-500 peer-checked:before:translate-x-[25px]" />
           </label>
         </div>
-
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-light text-[#323b4b] mb-4">
-              Stay Organized with Event Alerts
-            </h2>
-            <p className="text-base text-[#416675] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Elementum risus tempor at
-              vivamus curabitur viverra diam nec.
-            </p>
-            <a
-              href="calendar.html"
-              className="inline-block bg-[#f3f3f3] text-[#0090c4] px-5 py-2 rounded shadow-inner shadow-gray-300 text-sm"
+        <div className="bg-white rounded-[10px] w-full">
+          <h2 className="text-[22px] font-semibold text-[#333] mb-6 font-poppins">
+            Personal Details
+          </h2>
+          <div className="flex flex-wrap gap-5 mb-5">
+            <div className="flex-1 min-w-[150px]">
+              <label
+                htmlFor="patient-name"
+                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+              >
+                Patient Name
+              </label>
+              <input
+                type="text"
+                id="patient-name"
+                placeholder="Enter your name"
+                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+              />
+            </div>
+            <div className="flex-1 min-w-[150px]">
+              <label
+                htmlFor="age"
+                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+              >
+                Age
+              </label>
+              <input
+                type="text"
+                id="age"
+                placeholder="Enter your age"
+                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-5 mb-5">
+            <div className="flex-1 min-w-[150px]">
+              <label
+                htmlFor="weight"
+                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+              >
+                Weight
+              </label>
+              <input
+                type="text"
+                id="weight"
+                placeholder="Enter your weight"
+                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+              />
+            </div>
+            <div className="flex-1 min-w-[150px]">
+              <label
+                htmlFor="blood-group"
+                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+              >
+                Blood Group
+              </label>
+              <input
+                type="text"
+                id="blood-group"
+                placeholder="Enter your blood group (e.g., A+, O-)"
+                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+              />
+            </div>
+          </div>
+          <h3 className="text-[13px] font-medium text-[#1b2228] font-poppins">
+            Medicines
+          </h3>
+          {[1, 2, 3].map((num) => (
+            <div
+              key={num}
+              className="flex flex-col md:flex-row justify-between py-2 gap-2"
             >
-              Connect With Google Calendar
-            </a>
-          </div>
-          <div className="md:w-1/2">
-            <img
-              src="images/update.png"
-              alt="Event Update"
-              className="w-full object-contain"
-            />
-          </div>
-        </div>
-      </main>
-
-      <footer className="bg-white mt-16 p-8">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-          <div>
-            <img
-              src="images/Footer-logo.png"
-              alt="Footer Logo"
-              className="h-10 mb-4"
-            />
-            <p className="text-sm text-gray-600 mb-4">
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete
-              account of the system
-            </p>
-            <p className="text-xs text-gray-500">
-              © 2022 Virtual Assistant. All Rights Reserved. With love by Elmous
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div>
-              <h2 className="font-semibold text-gray-800 mb-2">Services</h2>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>Personal Tasks</li>
-                <li>Business Support Services</li>
-                <li>Digital Marketing</li>
-                <li>IT/Web Services</li>
-                <li>Business Model</li>
-              </ul>
+              <input
+                type="text"
+                placeholder={`Medicine 0${num}`}
+                className="md:w-[227px] h-[31px] bg-[#ebf0f3] opacity-85 text-center md:text-start cursor-pointer rounded"
+              />
+              <input
+                type="text"
+                placeholder={`Dosage 0${num}`}
+                className="md:w-[227px] h-[31px] bg-[#ebf0f3] opacity-85 text-center cursor-pointer rounded"
+              />
+              <input
+                type="text"
+                placeholder={`Time To Take 0${num}`}
+                className="md:w-[227px] h-[31px] bg-[#ebf0f3] opacity-85 text-center md:text-start cursor-pointer rounded"
+              />
             </div>
-            <div>
-              <h2 className="font-semibold text-gray-800 mb-2">Terms of Use</h2>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>Terms & Conditions</li>
-                <li>Refund Policy</li>
-                <li>Privacy Policy</li>
-                <li>Disclaimer</li>
-              </ul>
-            </div>
+          ))}
+          <div className="flex justify-end mt-4 mb-12">
+            <button className="px-5 py-2 bg-blue-500 text-white rounded hover:bg-white hover:text-black border hover:border-[#14242e] transition">
+              Add Medicine
+            </button>
+          </div>
+          <div className="flex gap-3">
+            <button className="px-5 py-2 bg-gray-200 text-[#333] rounded hover:bg-blue-700 hover:text-white font-medium">
+              Save
+            </button>
+            <button className="px-5 py-2 bg-gray-200 text-[#333] rounded hover:bg-blue-700 hover:text-white font-medium">
+              Cancel
+            </button>
           </div>
         </div>
-        <div className="mt-8 text-center">
-          <div className="flex justify-center gap-4 text-gray-500">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
-            <i className="fab fa-linkedin-in"></i>
-          </div>
-        </div>
-      </footer> */}
-    </div>
+      </div>
+    </main>
   );
 };
 
