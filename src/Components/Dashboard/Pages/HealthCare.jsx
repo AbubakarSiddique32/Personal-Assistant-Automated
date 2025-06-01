@@ -1,45 +1,45 @@
 import React from "react";
+import pageImage from "../../../Images/Get Started/Pages/Image.png";
 
 const HealthCare = () => {
   return (
     <main className="bg-gradient-to-br from-[#fef9eb] via-[#f2f5f0] to-[#f8f3fd] py-20 px-5">
       <div className="xl:w-[70%] md:w-[85%] w-full m-auto bg-white md:px-8 px-3 py-7  rounded-[50px]">
-        <div className="mb-4">
-          <h1 className="text-[28px] font-bold text-[#1b2228] font-poppins">
-            Health Care Reminder
-          </h1>
-        </div>
-        <div className="flex items-center w-full my-6" id="direction">
-          <div className="w-[84px]">
-            <img
-              src="images/cl.png"
-              alt=""
-              className="rounded-full border border-red-800 object-cover"
-            />
-          </div>
-          <p className="ml-4 text-[28px] font-semibold text-[#1b2228] font-poppins">
+        <h1 className="text-[28px] font-poppins font-bold mb-5">
+          Health Care Reminder
+        </h1>
+
+        <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+          <img
+            src={pageImage}
+            alt="Client"
+            className="w-[84px] h-[84px] object-contain rounded-full border border-red-900"
+          />
+          <p className="text-[28px] font-poppins font-semibold text-[#1B2228]]">
             Scott Wisse
           </p>
         </div>
-        <div className="mb-4">
-          <p className="text-[20px] font-bold text-[#1b2228] font-poppins">
+        <div className="mb-8">
+          <p className="text-xl font-poppins font-bold text-[#1b2228]">
             Settings
           </p>
         </div>
-        <div className="flex justify-between items-center border-b border-blue-200 pb-6 mb-6">
+
+        <div className="flex md:flex-row flex-col justify-between  bg-[#EFEFEF] px-4 py-3 gap-2  mb-10">
           <div>
-            <h4 className="text-[17px] font-bold font-poppins text-[#1b2228]">
-              Enable Weather Update
+            <h4 className="font-semibold text-[#1B2228] font-poppins text-[17px]">
+              Enable Daily Notifications
             </h4>
-            <p className="text-[15px] text-[#666] font-poppins mt-1">
+            <p className=" text-[#14242E9E] font-[400] text-[15px]">
               Turn on to receive notifications daily
             </p>
           </div>
-          <label className="relative inline-block w-[46px] h-[24px]">
-            <input type="checkbox" className="hidden" />
-            <span className="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-[#ccc] rounded-full transition-all before:absolute before:content-[''] before:h-[15px] before:w-[15px] before:left-[3px] before:bottom-[5px] before:bg-black before:rounded-full before:transition-all peer-checked:bg-blue-500 peer-checked:before:translate-x-[25px]" />
+          <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" />
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-500 relative after:content-[''] after:absolute after:top-0.5 after:left-0.5  after:bg-black after:border-black after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full" />
           </label>
         </div>
+
         <div className="bg-white rounded-[10px] w-full">
           <h2 className="text-[22px] font-semibold text-[#333] mb-6 font-poppins">
             Personal Details
