@@ -10,6 +10,7 @@ import Events from "./Pages/Events";
 import HealthCare from "./Pages/HealthCare";
 import Assistent from "./Pages/Assistent";
 import Footer from "../Main/Footer";
+import Calendar from "./Pages/Calendar";
 const GetStarted = () => {
   return (
     <div>
@@ -74,6 +75,15 @@ const GetStarted = () => {
           element={
             <>
               <Assistent />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="calendar"
+          element={
+            <>
+              <Calendar />
               <Footer />
             </>
           }

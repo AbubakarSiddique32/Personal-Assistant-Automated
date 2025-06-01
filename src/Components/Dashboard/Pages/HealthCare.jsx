@@ -25,7 +25,7 @@ const HealthCare = () => {
           </p>
         </div>
 
-        <div className="flex md:flex-row flex-col justify-between  bg-[#EFEFEF] px-4 py-3 gap-2  mb-10">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-blue-200 pb-4 mb-6">
           <div>
             <h4 className="font-semibold text-[#1B2228] font-poppins text-[17px]">
               Enable Daily Notifications
@@ -40,15 +40,17 @@ const HealthCare = () => {
           </label>
         </div>
 
-        <div className="bg-white rounded-[10px] w-full">
+        <div className="bg-white rounded-[10px] w-full px-6 py-8">
           <h2 className="text-[22px] font-semibold text-[#333] mb-6 font-poppins">
             Personal Details
           </h2>
+
+          {/* First row - Name & Age */}
           <div className="flex flex-wrap gap-5 mb-5">
-            <div className="flex-1 min-w-[150px]">
+            <div className="flex-1 min-w-[200px]">
               <label
                 htmlFor="patient-name"
-                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+                className="text-sm text-[#555] font-medium block mb-1"
               >
                 Patient Name
               </label>
@@ -56,13 +58,13 @@ const HealthCare = () => {
                 type="text"
                 id="patient-name"
                 placeholder="Enter your name"
-                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+                className="w-full p-2.5 text-[15px] text-[#14242e] bg-[#f3f7f9] rounded-md border border-[#ccc] cursor-pointer"
               />
             </div>
-            <div className="flex-1 min-w-[150px]">
+            <div className="flex-1 min-w-[200px]">
               <label
                 htmlFor="age"
-                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+                className="text-sm text-[#555] font-medium block mb-1"
               >
                 Age
               </label>
@@ -70,15 +72,17 @@ const HealthCare = () => {
                 type="text"
                 id="age"
                 placeholder="Enter your age"
-                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+                className="w-full p-2.5 text-[15px] text-[#14242e] bg-[#f3f7f9] rounded-md border border-[#ccc] cursor-pointer"
               />
             </div>
           </div>
-          <div className="flex flex-wrap gap-5 mb-5">
-            <div className="flex-1 min-w-[150px]">
+
+          {/* Second row - Weight & Blood Group */}
+          <div className="flex flex-wrap gap-5 mb-8">
+            <div className="flex-1 min-w-[200px]">
               <label
                 htmlFor="weight"
-                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+                className="text-sm text-[#555] font-medium block mb-1"
               >
                 Weight
               </label>
@@ -86,61 +90,65 @@ const HealthCare = () => {
                 type="text"
                 id="weight"
                 placeholder="Enter your weight"
-                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+                className="w-full p-2.5 text-[15px] text-[#14242e] bg-[#f3f7f9] rounded-md border border-[#ccc] cursor-pointer"
               />
             </div>
-            <div className="flex-1 min-w-[150px]">
+            <div className="flex-1 min-w-[200px]">
               <label
                 htmlFor="blood-group"
-                className="text-[13px] text-[#555] font-medium font-poppins mb-1 block"
+                className="text-sm text-[#555] font-medium block mb-1"
               >
                 Blood Group
               </label>
               <input
                 type="text"
                 id="blood-group"
-                placeholder="Enter your blood group (e.g., A+, O-)"
-                className="w-full p-2.5 text-[15px] text-[#14242e66] bg-[#ebf0f3] rounded-[5px] border border-[#ddd] opacity-85 cursor-pointer"
+                placeholder="Enter your blood group"
+                className="w-full p-2.5 text-[15px] text-[#14242e] bg-[#f3f7f9] rounded-md border border-[#ccc] cursor-pointer"
               />
             </div>
           </div>
-          <h3 className="text-[13px] font-medium text-[#1b2228] font-poppins">
+
+          {/* Medicines section */}
+          <h3 className="text-[14px] font-semibold text-[#222] mb-3">
             Medicines
           </h3>
           {[1, 2, 3].map((num) => (
-            <div
-              key={num}
-              className="flex flex-col md:flex-row justify-between py-2 gap-2"
-            >
+            <div key={num} className="flex flex-wrap md:flex-nowrap gap-4 mb-5">
               <input
                 type="text"
                 placeholder={`Medicine 0${num}`}
-                className="md:w-[227px] h-[31px] bg-[#ebf0f3] opacity-85 text-center md:text-start cursor-pointer rounded"
+                className="flex-1 min-w-[150px] p-2.5 bg-[#f3f7f9] text-[#14242e] rounded-md border border-[#ccc] cursor-pointer"
               />
               <input
                 type="text"
                 placeholder={`Dosage 0${num}`}
-                className="md:w-[227px] h-[31px] bg-[#ebf0f3] opacity-85 text-center cursor-pointer rounded"
+                className="flex-1 min-w-[150px] p-2.5 bg-[#f3f7f9] text-[#14242e] rounded-md border border-[#ccc] cursor-pointer"
               />
               <input
                 type="text"
                 placeholder={`Time To Take 0${num}`}
-                className="md:w-[227px] h-[31px] bg-[#ebf0f3] opacity-85 text-center md:text-start cursor-pointer rounded"
+                className="flex-1 min-w-[150px] p-2.5 bg-[#f3f7f9] text-[#14242e] rounded-md border border-[#ccc] cursor-pointer"
               />
             </div>
           ))}
-          <div className="flex justify-end mt-4 mb-12">
-            <button className="px-5 py-2 bg-blue-500 text-white rounded hover:bg-white hover:text-black border hover:border-[#14242e] transition">
+
+          <div className="flex justify-end mb-10 mt-">
+            <button className="bg-[#009DFF] hover:bg-[#007acc] text-white font-medium py-2 px-4 rounded-[8px] transition">
               Add Medicine
             </button>
           </div>
-          <div className="flex gap-3">
-            <button className="px-5 py-2 bg-gray-200 text-[#333] rounded hover:bg-blue-700 hover:text-white font-medium">
-              Save
-            </button>
-            <button className="px-5 py-2 bg-gray-200 text-[#333] rounded hover:bg-blue-700 hover:text-white font-medium">
-              Cancel
-            </button>
+
+          {/* Save/Cancel Buttons */}
+          <div className="mt-6 flex md:justify-start justify-center    ">
+            <div className="border-t  border-[#495F6E33] py-5">
+              <button className=" border border-[#495F6E33] text-black py-2 px-6 rounded-[8px] mr-4">
+                Save
+              </button>
+              <button className="border border-[#495F6E33] text-black py-2 px-6 rounded-[8px]">
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       </div>

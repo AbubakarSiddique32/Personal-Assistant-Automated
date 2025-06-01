@@ -121,7 +121,7 @@ const MainSection = () => {
             schedule, and maximize productivity.
           </p>
           <Link
-            to="/getstarted"
+            to="/getstarted/motivation"
             className="bg-[#416675] font-Inter font-[600] text-[16px] text-white px-6 py-2 rounded-[8px] hover:bg-[#1d353f] transition"
           >
             Button
